@@ -38,6 +38,7 @@ h4 {
 	letter-spacing: 1px;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-top: 30px;
 }
 
 a {
@@ -94,11 +95,62 @@ a:hover {
 .container {
 	padding-top: 50px;
 	padding-bottom: 70px;
+	overflow-x: hidden;
 }
 
 .navbar .container {
 	padding-top: 0px;
 	padding-bottom: 0px;	
+}
+
+.bands span {
+	display: inline-block;
+}
+
+.bands span:nth-child(1) {
+	animation-delay: 100ms;
+}
+.bands span:nth-child(2) {
+	animation-delay: 200ms;
+}
+.bands span:nth-child(3) {
+	animation-delay: 300ms;
+}
+.bands span:nth-child(4) {
+	animation-delay: 400ms;
+}
+.bands span:nth-child(5) {
+	animation-delay: 500ms;
+}
+.bands span:nth-child(6) {
+	animation-delay: 600ms;
+}
+.bands span:nth-child(7) {
+	animation-delay: 700ms;
+}
+.bands span:nth-child(8) {
+	animation-delay: 800ms;
+}
+.bands span:nth-child(9) {
+	animation-delay: 900ms;
+}
+.bands span:nth-child(10) {
+	animation-delay: 1000ms;
+}
+.bands span:nth-child(11) {
+	animation-delay: 1100ms;
+}
+.bands span:nth-child(12) {
+	animation-delay: 1200ms;
+}
+.bands span:nth-child(13) {
+	animation-delay: 1300ms;
+}
+.bands span:nth-child(14) {
+	animation-delay: 1400ms;
+}
+.bands span:nth-child(15) {
+	animation-delay: 1500ms;
 }
 
 .container-fluid.pink {
@@ -107,6 +159,13 @@ a:hover {
     background: -o-linear-gradient(rgba(231,77,105,1), rgba(231,77,105,0)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgba(231,77,105,1), rgba(231,77,105,0)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgba(231,77,105,1), rgba(231,77,105,0)); /* Standard syntax */
+}
+.container-fluid.pink-reversed {
+	background: #F5B5C1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(231,77,105,0), rgba(231,77,105,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(231,77,105,0), rgba(231,77,105,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(231,77,105,0), rgba(231,77,105,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(231,77,105,0), rgba(231,77,105,1)); /* Standard syntax */
 }
 
 .container-fluid.blue {
@@ -133,12 +192,53 @@ a:hover {
     background: linear-gradient(rgba(231,77,105,1), rgba(0,138,207,1)); /* Standard syntax */
 }
 
+/*h1.animated {
+	animation-name: amore;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    color: white;
+}*/
+
+@keyframes pulse-big {
+	0%{
+		transform: scale(1);
+	}
+    100%{
+    	transform: scale(1.2);
+    }
+}
+.pulse-big{
+	animation-name: pulse-big;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ondeggiante {
+	0%{
+		transform: translate(-7px, 0px);
+	}
+    100%{
+    	transform: translate(7px, 0px);
+    }
+}
+.ondeggiante{
+	animation-name: ondeggiante;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
 .container-fluid.black {
 	background: #000; /* For browsers that do not support gradients */
 }
 
 #map{
-	min-height: 30vh;
+	min-height: 65vh;
 	background-color: #E74D69;
 }
 
@@ -146,7 +246,7 @@ a:hover {
 	background-color: black;
 }
 
-#aftermovie>.video-box {
+#aftermovie .video-box {
 	width: 100vw;
 	height: 56vw;
 	max-height: 80vh;
@@ -160,7 +260,6 @@ a:hover {
 #map>.map-box {
 	width: 100vw;
 	height: 56vw;
-	max-height: 80vh;
 }
 
 #map iframe {
@@ -168,8 +267,37 @@ a:hover {
 	height: 100%;
 	pointer-events: none;
 }
+#amore {
+	height: calc(100vh - 50px);
+	width:100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
-/*@media (max-width: @screen-xs-max) { ... }*/
+@media (max-width: 767px) {
+
+	body {
+		font-size: 16px;
+		line-height: normal;
+	}
+
+	h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.container {
+		padding-top: 20px;
+	}
+
+	#map>.map-box {
+		width: 100vw;
+		height: 60vh;
+	}
+
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 
 	.navbar-default .navbar-brand {

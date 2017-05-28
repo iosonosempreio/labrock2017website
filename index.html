@@ -20,6 +20,9 @@
     <!-- Custom styles for this template -->
     <link href="navbar-fixed-top.css" rel="stylesheet">
 
+    <!-- css library for animations -->
+    <link href="./assets/css/animations.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="./assets/js/ie-emulation-modes-warning.js"></script>
@@ -43,7 +46,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Lambrock2017</a>
+          <a class="navbar-brand" href="#top">Lambrock2017</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -52,42 +55,42 @@
             <li><a href="#dove">Dove?</a></li>
             <li><a href="#crowdfunding">Crowdfunding</a></li>
             <li><a href="#fare">Fare</a></li>
-            <li><a href="#aftermovie">Aftermovie 2016</a></li>
+            <li><a href="#aftermovie-anchor">Aftermovie 2016</a></li>
             <li><a href="#contatti">Contatti</a></li>
-            <li><a href="#amore"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
+            <li><a href="#amore" class="pulse-big"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container-fluid full">
+    <div class="container-fluid full" id="top">
       <img class="img-responsive full" src="./assets/img/cover.png" />
     </div>
 
     <div class="container-fluid pink">
       <div class="container" id="mainstage"> 
-        <h1 class="text-center">Main Stage</h1>
+        <h1 class="text-center floating">Main Stage</h1>
         <div class="row">
           <div class="col-md-4">
             <h4 class="text-center">Venerdì 23 giugno</h4>
-            <h2 class="text-center"><del>XXXXX?X</del></h2>
-            <h3 class="text-center">The Fighettas</h3>
-            <h3 class="text-center">Hawaii Zombie</h3>
-            <h3 class="text-center">Daikon</h3>
+            <h2 class="text-center tossing"><del>XX?X<br/>X?X</del></h2>
+            <h3 class="text-center pulse">The Fighettas</h3>
+            <h3 class="text-center pulse">Hawaii Zombie</h3>
+            <h3 class="text-center pulse">Daikon</h3>
           </div>
           <div class="col-md-4">
             <h4 class="text-center">Sabato 24 giugno</h4>
-            <h2 class="text-center">Leeches</h2>
-            <h3 class="text-center">Endrigo</h3>
-            <h3 class="text-center">Krang</h3>
-            <h3 class="text-center">Pesci Solubili</h3>
+            <h2 class="text-center tossing">The<br/>Leeches</h2>
+            <h3 class="text-center pulse">Endrigo</h3>
+            <h3 class="text-center pulse">Krang</h3>
+            <h3 class="text-center pulse">Pesci Solubili</h3>
           </div>
           <div class="col-md-4">
             <h4 class="text-center">Domenica 25 giugno</h4>
-            <h2 class="text-center">Anthony Laszlo</h2>
-            <h3 class="text-center">Push Button Gently</h3>
-            <h3 class="text-center">Vanarin</h3>
-            <h3 class="text-center" class="text-center">Metelkova</h3>
+            <h2 class="text-center tossing">Anthony<br/>Laszlo</h2>
+            <h3 class="text-center pulse">Push Button Gently</h3>
+            <h3 class="text-center pulse">Vanarin</h3>
+            <h3 class="text-center pulse" class="text-center">Metelkova</h3>
           </div>
         </div>
       </div>
@@ -95,23 +98,23 @@
 
     <div class="container-fluid blue" id="mdvstage">
       <div class="container"> 
-        <h1 class="text-center">MDV Stage</h1>
+        <h1 class="text-center floating">MDV Stage</h1>
         <div class="row"> 
           <div class="col-md-10 col-md-push-1">
             <h4 class="text-center">Sabato 24 giugno</h4>
-            <p class="text-center text-uppercase">Zetta Como, Geri Rodenberger, Vertie Yerkes, Elizbeth Jerrell, Nola Lisby, Xiomara Severe, Bok Cratty, Mellissa Boso, Corrie Denham, Khalilah Carmean</p>
+            <p class="text-center text-uppercase bands"><span class="pulse">Zetta Como</span> <span class="pulse">Geri Rodenberger</span> <span class="pulse">Vertie Yerkes</span> <span  class="pulse">Elizbeth Jerrell</span> <span  class="pulse">Nola Lisby</span> <span  class="pulse">Xiomara Severe</span> <span  class="pulse">Bok Cratty</span> <span  class="pulse">Mellissa Boso</span> <span  class="pulse">Corrie Denham</span> <span  class="pulse">Khalilah Carmean</span></p>
           </div>
           <div class="col-md-10 col-md-push-1">
             <h4 class="text-center">Domenica 25 giugno</h4>
-            <p class="text-center text-uppercase">Lenora Batts, Corrie Denham, Kymberly Kohan, Phyliss Gilbertson, Angelyn Crossman, Tamra Schechter, Rosalina Coles, Jeannine Novack, Kymberly Kohan, Naomi Mcfall  </p>
+            <p class="text-center text-uppercase bands"><span class="pulse">Lenora Batts</span> <span class="pulse">Corrie Denham</span> <span class="pulse">Kymberly Kohan</span> <span class="pulse">Phyliss Gilbertson</span> <span class="pulse">Angelyn Crossman</span> <span class="pulse">Tamra Schechter</span> <span class="pulse">Rosalina Coles</span> <span class="pulse">Jeannine Novack</span> <span class="pulse">Kymberly Kohan</span> <span class="pulse">Naomi Mcfall</span></p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid pink" id="dove">
+    <div class="container-fluid pink-reversed" id="dove">
       <div class="container"> 
-        <h1 class="text-center">Dove ?</h1>
+        <h1 class="text-center floating">Dove <span class="pulse-big" style="display: inline-block;">?</span></h1>
         <div class="row"> 
           <div class="col-md-12">
             <p>Lambrock quest’anno cambia location! Dopo i bellissimi anni passati al campo sportivo di Lambrugo, questa volta lo potrete trovare presso <strong>l’area feste di Albese con Cassano</strong>, in via Cristoforo Colombo, 4.</p>
@@ -120,14 +123,14 @@
       </div>  
     </div>
     <div class="container-fluid full" id="map">
-      <div class="map-box">
+      <!-- <div class="map-box">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.8144626197945!2d9.164286715568549!3d45.794944679106244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47869f0e6911ff5d%3A0x688b471f73f6aa81!2sVia+Cristoforo+Colombo%2C+4%2C+22032+Albese+Con+Cassano+CO!5e0!3m2!1sen!2sit!4v1495906736849" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
+      </div> -->
     </div>
 
     <div class="container-fluid blue" id="crowdfunding">
     <div class="container"> 
-      <h1 class="text-center">Crowdfunding</h1>
+      <h1 class="text-center floating">Crowdfunding</h1>
       <div class="row"> 
         <div class="col-md-12">
           <p>Per rendere Lambrock un festival sempre più bello, quest’anno abbiamo chiesto un vostro aiuto tramite una campagna di finanziamento su <a href="https://www.musicraiser.com/it/projects/7515-lambrock-e-amore">musicraiser.it</a>. A tutti quelli che hanno partecipato vanno i nostri più sinceri e calorosi ringraziamenti: senza il vostro sostegno fare Lambrock 2017 sarebbe stato decisamente più difficile!</p>
@@ -138,7 +141,7 @@
     </div>
     <div class="container-fluid pink-blue" id="fare">
       <div class="container"> 
-        <h1 class="text-center">Cosa fare</h1>
+        <h1 class="text-center floating">Cosa fare <span class="pulse-big" style="display: inline-block;">?</span></h1>
         <div class="row"> 
           <div class="col-md-12">
             <p>Stiamo stilando la lista delle magnifiche cose da fare al Lambrock, continua a seguirci e non crederai ai tuoi occhi!</p>
@@ -146,7 +149,7 @@
         </div>
       </div>  
     </div>
-    <div class="container-fluid black">
+    <div class="container-fluid black" id="aftermovie-anchor">
       <div class="container">
         <h1 class="text-center">Edizione 2016</h1>
       </div>
@@ -163,19 +166,19 @@
       <h1 class="text-center">Contatti</h1>
       <div class="row"> 
         <div class="col-md-12">
-          <p class="text-center">Lambrock Festival è organizzato da: Associazione Culturale Mondo delle Uova<br/>Via Alessandro Volta, 28 - 22060 Arosio (CO)<br/>Tel: 031 764225 / CF: 9001854224<br/>~<br/><a href="http://www.mondodelleuova.it" target="_blank">www.mondodelleuova.it</a></p>
+          <p class="text-center">Lambrock Festival è organizzato da: Associazione Culturale Mondo delle Uova<br/>Via Alessandro Volta, 28 - 22060 Arosio (CO)<br/>Tel: 031 764225 / CF: 9001854224<br/>~</p>
+          <p class="text-center ondeggiante"><a href="http://www.mondodelleuova.it" target="_blank">www.mondodelleuova.it</a></p>
           <p class="text-center"><img width="120" src="./assets/img/mdv.png" /></p>
-          <p class="text-center">Con il patrocinio del Comune di Albese con Cassano<br/>~<br/><a href="http://www.comune.albeseconcassano.co.it" target="_blank">www.comune.albeseconcassano.co.it</a></p>
+          <p class="text-center">Con il patrocinio del Comune di Albese con Cassano<br/>~</p>
+          <p class="text-center ondeggiante"><a href="http://www.comune.albeseconcassano.co.it" target="_blank">comune.albeseconcassano.co.it</a></p>
           <p class="text-center"><img src="./assets/img/comune.png" /></p>
         </div>
       </div>
     </div> 
     </div>
 
-    
-
     <div class="container-fluid full pink-blue" id="amore"> 
-      <h1 class="text-center">Lambrock è amore</h1>
+      <h1 class="text-center pulse">Lambrock è amore</h1>
     </div>
     
 
@@ -190,6 +193,177 @@
     <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>
       $('body').scrollspy({ target: '#navbar' });
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $('html, body').animate({
+                scrollTop: target.offset().top-50
+              }, 800);
+            }
+          }
+        });
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaFIbe3Aub8ooVZGJtr4HdGdntf_zYr90&callback=initMap"></script>
+
+    <script type="text/javascript">
+      function initMap() {
+        var studio = {lat: 45.795195, lng: 9.166443};
+
+        //45.7949447, 9.1642714
+        //45.795218, 9.166239
+        var mapStyle = [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#e74d69"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "color": "#2c1445"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#ff7e95"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#757575"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#ffffff"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#a71c36"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#7a091e"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#7a091e"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#8ff099"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#008acf"
+      }
+    ]
+  }
+];
+
+
+
+
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.SMALL,
+            position: google.maps.ControlPosition.RIGHT_BOTTOM
+          },
+          center: studio,
+          styles: mapStyle,
+          disableDefaultUI: true,
+          panControl: true,
+          zoomControl: true,
+          scrollwheel: false,
+          draggable: true
+        });
+        var markerIcon = {
+          url : './assets/img/marker.png',
+          // origin: new google.maps.Point(0, 0),
+          anchor: new google.maps.Point(0, 20)
+        }
+        var marker = new google.maps.Marker({
+          position: studio,
+          map: map,
+          icon: markerIcon
+        });
+      }
     </script>
   </body>
 </html>
