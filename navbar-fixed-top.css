@@ -1,24 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Outline|Lekton:400,400i,700');
+
+
 body {
-  padding-top: 50px;
+	padding-top: 50px;
+	color: #2C1445;
+	font-family: 'Lekton', sans-serif;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+h1 {
+	font-family: 'Bungee Outline', cursive;
+	font-size: 84px;
+	line-height: 84px;
+}
+
+h2 {
+	font-size: 42px;
+	line-height: 52px;
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 27px;
+	line-height: 35px;
+	letter-spacing: 0.9px;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+a {
+	color: #E74D69;
+}
+
+a:hover {
+	color: #7A091E;
 }
 
 .container-fluid.full {
 	padding: 0px;
 }
 
+.container-fluid.black h1 {
+	color: white;
+}
+
+
+.container-fluid.black {
+	color: white;
+}
+
 .img-responsive.full{
 	width: 100%;
 }
 
+.navbar-default {
+    background-color: #E74D69;
+    border-color: #7A091E;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-size: 18px;
+	/*font-weight: bold;*/
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	font-size: 14px;
+	/*font-weight: bold;*/
+}
+
+.navbar-default .navbar-nav * {
+	transition: color 0.4s;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #2C1445;
+    background-color: #E74D69;
+}
+
+.container {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.navbar .container {
+	padding-top: 0px;
+	padding-bottom: 0px;	
+}
+
+.container-fluid.pink {
+	background: #F5B5C1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(231,77,105,1), rgba(231,77,105,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(231,77,105,1), rgba(231,77,105,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(231,77,105,1), rgba(231,77,105,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(231,77,105,1), rgba(231,77,105,0)); /* Standard syntax */
+}
+
+.container-fluid.blue {
+	background: #92CEEB; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0,138,207,1), rgba(0,138,207,0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,138,207,1), rgba(0,138,207,0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,138,207,1), rgba(0,138,207,0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,138,207,1), rgba(0,138,207,0)); /* Standard syntax */
+}
+
+.container-fluid.blue-black {
+	background: #92CEEB; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0,138,207,1), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,138,207,1), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,138,207,1), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,138,207,1), rgba(0,0,0,1)); /* Standard syntax */
+}
+
+.container-fluid.pink-blue {
+	background: #E74D69; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(231,77,105,1), rgba(0,138,207,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(231,77,105,1), rgba(0,138,207,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(231,77,105,1), rgba(0,138,207,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(231,77,105,1), rgba(0,138,207,1)); /* Standard syntax */
+}
+
+.container-fluid.black {
+	background: #000; /* For browsers that do not support gradients */
+}
+
 #map{
 	min-height: 30vh;
-	background-color: #B8E986;
+	background-color: #E74D69;
+}
+
+#aftermovie {
+	background-color: black;
 }
 
 #aftermovie>.video-box {
 	width: 100vw;
 	height: 56vw;
-	/*padding-bottom: 30%;*/
+	max-height: 80vh;
 }
 
 #aftermovie iframe {
@@ -29,7 +160,7 @@ body {
 #map>.map-box {
 	width: 100vw;
 	height: 56vw;
-	/*padding-bottom: 30%;*/
+	max-height: 80vh;
 }
 
 #map iframe {
@@ -37,3 +168,24 @@ body {
 	height: 100%;
 	pointer-events: none;
 }
+
+/*@media (max-width: @screen-xs-max) { ... }*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.navbar-default .navbar-brand {
+	    color: #fff;
+	    font-size: 14px;
+		/*font-weight: bold;*/
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		color: #fff;
+		font-size: 12px;
+		padding: 15px 10px;
+	}
+
+}
+/*@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }*/
+/*@media (min-width: @screen-lg-min) { ... }*/
+
+

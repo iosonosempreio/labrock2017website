@@ -31,11 +31,11 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -43,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Lambrock Festival 2017</a>
+          <a class="navbar-brand" href="#">Lambrock2017</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -51,9 +51,10 @@
             <li><a href="#mdvstage">MDV Stage</a></li>
             <li><a href="#dove">Dove?</a></li>
             <li><a href="#crowdfunding">Crowdfunding</a></li>
+            <li><a href="#fare">Fare</a></li>
             <li><a href="#aftermovie">Aftermovie 2016</a></li>
             <li><a href="#contatti">Contatti</a></li>
-            <li><a href="#amore"><3</a></li>
+            <li><a href="#amore"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -63,54 +64,60 @@
       <img class="img-responsive full" src="./assets/img/cover.png" />
     </div>
 
-    <div class="container" id="mainstage"> 
-      <h1 class="text-center">Main Stage</h1>
-      <div class="row">
-        <div class="col-md-4">
-          <h4 class="text-center">Venerdì 23 giugno</h4>
-          <h2 class="text-center">Twerkit</h2>
-          <h3 class="text-center">The Fighettas</h3>
-          <h3 class="text-center">Hawaii Zombie</h3>
-          <h3 class="text-center">Daikon</h3>
-        </div>
-        <div class="col-md-4">
-          <h4 class="text-center">Sabato 24 giugno</h4>
-          <h2 class="text-center">Leeches</h2>
-          <h3 class="text-center">Endrigo</h3>
-          <h3 class="text-center">Krang</h3>
-          <h3 class="text-center">Pesci Solubili</h3>
-        </div>
-        <div class="col-md-4">
-          <h4 class="text-center">Domenica 25 giugno</h4>
-          <h2 class="text-center">Anthony Laszlo</h2>
-          <h3 class="text-center">Push Button Gently</h3>
-          <h3 class="text-center">Vanarin</h3>
-          <h3 class="text-center" class="text-center">Metelkova</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" id="mdvstage"> 
-      <h1 class="text-center">MDV Stage</h1>
-      <div class="row"> 
-        <div class="col-md-10 col-md-push-1">
-          <h4 class="text-center">Sabato 24 giugno</h4>
-          <p>Zetta Como, Geri Rodenberger, Vertie Yerkes, Elizbeth Jerrell, Nola Lisby, Xiomara Severe, Bok Cratty, Mellissa Boso, Corrie Denham, Khalilah Carmean</p>
-        </div>
-        <div class="col-md-10 col-md-push-1">
-          <h4 class="text-center">Domenica 25 giugno</h4>
-          <p>Lenora Batts, Corrie Denham, Kymberly Kohan, Phyliss Gilbertson, Angelyn Crossman, Tamra Schechter, Rosalina Coles, Jeannine Novack, Kymberly Kohan, Naomi Mcfall  </p>
+    <div class="container-fluid pink">
+      <div class="container" id="mainstage"> 
+        <h1 class="text-center">Main Stage</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <h4 class="text-center">Venerdì 23 giugno</h4>
+            <h2 class="text-center"><del>XXXXX?X</del></h2>
+            <h3 class="text-center">The Fighettas</h3>
+            <h3 class="text-center">Hawaii Zombie</h3>
+            <h3 class="text-center">Daikon</h3>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">Sabato 24 giugno</h4>
+            <h2 class="text-center">Leeches</h2>
+            <h3 class="text-center">Endrigo</h3>
+            <h3 class="text-center">Krang</h3>
+            <h3 class="text-center">Pesci Solubili</h3>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-center">Domenica 25 giugno</h4>
+            <h2 class="text-center">Anthony Laszlo</h2>
+            <h3 class="text-center">Push Button Gently</h3>
+            <h3 class="text-center">Vanarin</h3>
+            <h3 class="text-center" class="text-center">Metelkova</h3>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container" id="dove"> 
-      <h1 class="text-center">Dove ?</h1>
-      <div class="row"> 
-        <div class="col-md-12">
-          <p>Lambrock quest’anno cambia location! Dopo i bellissimi anni passati al campo sportivo di Lambrugo, questa volta lo potrete trovare presso l’area feste di Albese con Cassano, in via Cristoforo Colombo, 4.</p>
+    <div class="container-fluid blue" id="mdvstage">
+      <div class="container"> 
+        <h1 class="text-center">MDV Stage</h1>
+        <div class="row"> 
+          <div class="col-md-10 col-md-push-1">
+            <h4 class="text-center">Sabato 24 giugno</h4>
+            <p class="text-center text-uppercase">Zetta Como, Geri Rodenberger, Vertie Yerkes, Elizbeth Jerrell, Nola Lisby, Xiomara Severe, Bok Cratty, Mellissa Boso, Corrie Denham, Khalilah Carmean</p>
+          </div>
+          <div class="col-md-10 col-md-push-1">
+            <h4 class="text-center">Domenica 25 giugno</h4>
+            <p class="text-center text-uppercase">Lenora Batts, Corrie Denham, Kymberly Kohan, Phyliss Gilbertson, Angelyn Crossman, Tamra Schechter, Rosalina Coles, Jeannine Novack, Kymberly Kohan, Naomi Mcfall  </p>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="container-fluid pink" id="dove">
+      <div class="container"> 
+        <h1 class="text-center">Dove ?</h1>
+        <div class="row"> 
+          <div class="col-md-12">
+            <p>Lambrock quest’anno cambia location! Dopo i bellissimi anni passati al campo sportivo di Lambrugo, questa volta lo potrete trovare presso <strong>l’area feste di Albese con Cassano</strong>, in via Cristoforo Colombo, 4.</p>
+          </div>
+        </div>
+      </div>  
     </div>
     <div class="container-fluid full" id="map">
       <div class="map-box">
@@ -118,7 +125,8 @@
       </div>
     </div>
 
-    <div class="container" id="crowdfunding"> 
+    <div class="container-fluid blue" id="crowdfunding">
+    <div class="container"> 
       <h1 class="text-center">Crowdfunding</h1>
       <div class="row"> 
         <div class="col-md-12">
@@ -127,25 +135,46 @@
         </div>
       </div>
     </div>
-
+    </div>
+    <div class="container-fluid pink-blue" id="fare">
+      <div class="container"> 
+        <h1 class="text-center">Cosa fare</h1>
+        <div class="row"> 
+          <div class="col-md-12">
+            <p>Stiamo stilando la lista delle magnifiche cose da fare al Lambrock, continua a seguirci e non crederai ai tuoi occhi!</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="container-fluid black">
+      <div class="container">
+        <h1 class="text-center">Edizione 2016</h1>
+      </div>
+    </div>
     <div class="container-fluid full" id="aftermovie"> 
-      <h1 class="text-center">Edizione 2016</h1>
+      
       <div class="video-box">
         <iframe src="https://www.youtube.com/embed/GtDpKazBflo" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 
+    <div class="container-fluid black">
     <div class="container" id="contatti"> 
       <h1 class="text-center">Contatti</h1>
       <div class="row"> 
         <div class="col-md-12">
           <p class="text-center">Lambrock Festival è organizzato da: Associazione Culturale Mondo delle Uova<br/>Via Alessandro Volta, 28 - 22060 Arosio (CO)<br/>Tel: 031 764225 / CF: 9001854224<br/>~<br/><a href="http://www.mondodelleuova.it" target="_blank">www.mondodelleuova.it</a></p>
+          <p class="text-center"><img width="120" src="./assets/img/mdv.png" /></p>
           <p class="text-center">Con il patrocinio del Comune di Albese con Cassano<br/>~<br/><a href="http://www.comune.albeseconcassano.co.it" target="_blank">www.comune.albeseconcassano.co.it</a></p>
+          <p class="text-center"><img src="./assets/img/comune.png" /></p>
         </div>
       </div>
+    </div> 
     </div>
 
-    <div class="container-fluid full" id="amore"> 
+    
+
+    <div class="container-fluid full pink-blue" id="amore"> 
       <h1 class="text-center">Lambrock è amore</h1>
     </div>
     
@@ -159,5 +188,8 @@
     <script src="./dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      $('body').scrollspy({ target: '#navbar' });
+    </script>
   </body>
 </html>
